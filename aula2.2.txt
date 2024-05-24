@@ -1,0 +1,23 @@
+A arquitetura cliente-servidor é um modelo de rede que divide tarefas entre provedores de recursos ou serviços, chamados de servidores, e os requisitantes de serviços, chamados de clientes. Aqui está uma ilustração típica da arquitetura cliente-servidor:
+
+
+Funcionamento da Arquitetura Cliente-Servidor
+Clientes: São dispositivos ou programas que fazem solicitações de serviços ou recursos. Eles enviam requisições ao servidor para obter dados ou executar tarefas específicas. Exemplos de clientes incluem navegadores de internet, aplicativos de e-mail e softwares de gestão.
+
+Servidores: São máquinas ou programas que fornecem serviços ou recursos solicitados pelos clientes. Um servidor pode oferecer diversos tipos de serviços, como hospedagem de sites (servidores web), armazenamento de dados (servidores de arquivos), ou gestão de e-mails (servidores de e-mail).
+
+Processo de Comunicação: A comunicação entre clientes e servidores geralmente ocorre através de uma rede, como a internet. O cliente envia uma solicitação ao servidor utilizando protocolos de comunicação padrão (por exemplo, HTTP para navegação na web). O servidor processa a solicitação e responde com os dados ou resultados solicitados.
+
+Exemplos de Uso
+Navegação na Web: Quando você acessa um site, o navegador (cliente) envia uma solicitação ao servidor do site. O servidor processa essa solicitação e retorna as páginas web que serão exibidas no navegador.
+Serviços de E-mail: Clientes de e-mail enviam mensagens para servidores de e-mail, que então entregam essas mensagens aos destinatários.
+Vantagens
+Centralização dos Recursos: Facilita a manutenção e o gerenciamento dos dados, uma vez que todos os recursos são controlados de forma centralizada no servidor.
+Segurança e Controle: Proporciona um ambiente mais seguro e controlado, ideal para organizações que precisam proteger dados sensíveis.
+Desvantagens
+Dependência do Servidor: Se o servidor falhar, os clientes não conseguirão acessar os recursos ou serviços fornecidos.
+Custo e Complexidade: Implementar e manter servidores dedicados pode ser caro e exigir especialistas em TI.
+Comparação com Redes Ponto-a-Ponto
+Diferentemente das redes ponto-a-ponto, onde cada dispositivo pode atuar como cliente e servidor simultaneamente, na arquitetura cliente-servidor há uma clara separação de funções, com servidores dedicados a fornecer serviços e clientes que apenas os consomem. Isso oferece maior eficiência e controle, mas também cria um ponto único de falha e pode aumentar a complexidade da infraestrutura.
+
+A arquitetura cliente-servidor é amplamente utilizada em muitos contextos, desde pequenas redes corporativas até grandes serviços baseados na nuvem, devido à sua flexibilidade e capacidade de gerenciamento centralizado de recursos.
