@@ -1,0 +1,17 @@
+Entidade: Aluno
+ID do Aluno (atributo simples): Um identificador único para cada aluno. Exemplo: "A12345".
+Nome Completo (atributo composto): Composto por primeiro nome e sobrenome.
+Primeiro Nome: Exemplo: "João"
+Sobrenome: Exemplo: "Silva"
+Data de Nascimento (atributo simples): A data de nascimento do aluno. Exemplo: "1990-01-15".
+Endereço (atributo composto): Composto por rua, número, cidade, estado e CEP.
+Rua: Exemplo: "Rua das Flores"
+Número: Exemplo: "123"
+Cidade: Exemplo: "São Paulo"
+Estado: Exemplo: "SP"
+CEP: Exemplo: "01000-000"
+Telefone (atributo multivalorado): Um aluno pode ter múltiplos números de telefone.
+Telefones: Exemplo: ["(11) 91234-5678", "(11) 99876-5432"]
+Email (atributo simples): O endereço de email do aluno. Exemplo: "joao.silva@email.com".
+Cursos Matriculados (atributo multivalorado): Lista de cursos em que o aluno está matriculado.
+Cursos: Exemplo: ["Matemática", "Física", "Programação"]

@@ -1,0 +1,54 @@
+A Primeira Forma Normal (1FN) exige que uma tabela (ou relação) em um banco de dados atenda aos seguintes critérios:
+
+Eliminação de grupos repetitivos: Cada coluna deve conter valores atômicos, ou seja, cada campo deve armazenar um único valor.
+Cada célula contém apenas um valor: Não pode haver listas ou conjuntos de valores em uma única célula.
+Todos os valores em uma coluna são do mesmo tipo: Cada coluna deve armazenar apenas um tipo de dado.
+Vamos considerar uma tabela de exemplo que precisa ser transformada em 1FN. Suponha a seguinte tabela inicial:
+
+ID do Aluno	Nome Completo	Data de Nascimento	Endereço	Telefones	Cursos Matriculados
+A12345	João Silva	1990-01-15	Rua das Flores, 123, São Paulo	(11) 91234-5678, (11) 99876-5432	Matemática, Física, Programação
+A12346	Maria Oliveira	1992-05-23	Av. Paulista, 456, São Paulo	(11) 92345-6789	Matemática
+A12347	Pedro Souza	1988-09-11	Rua A, 789, Rio de Janeiro	(21) 91234-5678	Física, Química
+Transformação para a Primeira Forma Normal (1FN)
+Para transformar essa tabela em 1FN, precisamos eliminar os grupos repetitivos, dividindo os atributos multivalorados (Telefones e Cursos Matriculados) em linhas separadas. A tabela resultante ficaria assim:
+
+Tabela Aluno
+ID do Aluno	Nome Completo	Data de Nascimento	Endereço
+A12345	João Silva	1990-01-15	Rua das Flores, 123, São Paulo
+A12346	Maria Oliveira	1992-05-23	Av. Paulista, 456, São Paulo
+A12347	Pedro Souza	1988-09-11	Rua A, 789, Rio de Janeiro
+Tabela Telefones
+ID do Aluno	Telefone
+A12345	(11) 91234-5678
+A12345	(11) 99876-5432
+A12346	(11) 92345-6789
+A12347	(21) 91234-5678
+Tabela Cursos Matriculados
+ID do Aluno	Curso
+A12345	Matemática
+A12345	Física
+A12345	Programação
+A12346	Matemática
+A12347	Física
+A12347	Química
+Estrutura após Normalização
+Tabela Aluno
+ID do Aluno	Nome Completo	Data de Nascimento	Endereço
+A12345	João Silva	1990-01-15	Rua das Flores, 123, São Paulo
+A12346	Maria Oliveira	1992-05-23	Av. Paulista, 456, São Paulo
+A12347	Pedro Souza	1988-09-11	Rua A, 789, Rio de Janeiro
+Tabela Telefones
+ID do Aluno	Telefone
+A12345	(11) 91234-5678
+A12345	(11) 99876-5432
+A12346	(11) 92345-6789
+A12347	(21) 91234-5678
+Tabela Cursos Matriculados
+ID do Aluno	Curso
+A12345	Matemática
+A12345	Física
+A12345	Programação
+A12346	Matemática
+A12347	Física
+A12347	Química
+Com essa transformação, eliminamos os grupos repetitivos e asseguramos que cada célula contém apenas um valor atômico, conforme os requisitos da Primeira Forma Normal.
